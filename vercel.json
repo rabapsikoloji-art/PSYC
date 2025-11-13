@@ -1,0 +1,22 @@
+// Source - https://stackoverflow.com/a
+// Posted by Lshiroc
+// Retrieved 2025-11-14, License - CC BY-SA 4.0
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/"
+    }
+  ],
+  "regions": [
+    "sfo1"
+  ]
+}
