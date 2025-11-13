@@ -1,0 +1,870 @@
+{
+  "testName": "Otomatik Düşünceler Ölçeği",
+  "testCode": "ODO",
+  "version": "Türkçe Uyarlama",
+  "description": "Otomatik Düşünceler Ölçeği, bireylerin depresyonla ilişkili negatif otomatik düşüncelerinin sıklığını değerlendirmek için kullanılan 30 maddelik bir öz-bildirim ölçeğidir. Bilişsel Terapi yaklaşımına dayalı olarak geliştirilmiştir.",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Tüm dünya bana karşıymış gibi geliyor",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Hiç bir işe yaramıyorum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Neden hiç başarılı olamıyorum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Beni hiç kimse anlamıyor",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Başkalarını düş kırıklığına uğrattığım oldu",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Devam edebileceğimi sanmıyorum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Keşke daha iyi bir insan olsaydım",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Öyle güçsüzüm ki ...",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Hayatım istediğim gibi gitmiyor",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Kendimi düş kırıklığına uğrattım",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Artık hiçbir şeyin tadı kalmadı",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Artık dayanamayacağım",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Bir türlü harekete geçemiyorum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Neyim var benim",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Keşke başka bir yerde olsaydım",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Hiçbir şeyin iki ucunu bir araya getiremiyorum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Kendimden nefret ediyorum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Değersiz bir insanım",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Keşke birden yok olabilseydim",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Ne zorum var benim",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Hayatta hep kaybetmeye mahkûmum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Hayatım karmakarışık",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Başarısızım",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Hiç bir zaman başaramayacağım",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "Kendimi çok çaresiz hissediyorum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "text": "Bir şeylerin değişmesi gerek",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "text": "Bende mutlaka bir bozukluk olmalı",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "Geleceğim kasvetli",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "text": "Hiç bir şey için uğraşmaya değmez",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "text": "Hiçbir şeyi bitiremiyorum",
+      "options": [
+        {
+          "value": 1,
+          "label": "Hiç aklımdan geçmedi"
+        },
+        {
+          "value": 2,
+          "label": "Ender olarak aklımdan geçti"
+        },
+        {
+          "value": 3,
+          "label": "Arada sırada aklımdan geçti"
+        },
+        {
+          "value": 4,
+          "label": "Sık sık aklımdan geçti"
+        },
+        {
+          "value": 5,
+          "label": "Hep aklımdan geçti"
+        }
+      ]
+    }
+  ],
+  "scales": {
+    "KISISEL_UYUMSUZLUK_CARESIZLIK": {
+      "name": "Kişisel Uyumsuzluk ve Çaresizlik",
+      "description": "Bireyin kendini değersiz, yetersiz ve çaresiz hissetmesini yansıtan düşünceler",
+      "questionIds": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        13,
+        14,
+        17,
+        18,
+        23,
+        24,
+        25,
+        27,
+        30
+      ],
+      "totalItems": 15
+    },
+    "OLUMLU_BEKLENTI_AZALMASI": {
+      "name": "Olumsuz Benlik Algısı ve Olumsuz Beklentiler",
+      "description": "Gelecekle ilgili olumsuz beklentiler ve benlik algısındaki negatiflik",
+      "questionIds": [
+        9,
+        11,
+        12,
+        15,
+        19,
+        20,
+        21,
+        22,
+        26,
+        28,
+        29
+      ],
+      "totalItems": 11
+    },
+    "DUZENLEME_GUCLUGU": {
+      "name": "Düzenleme ve Yönelim Güçlüğü",
+      "description": "Yaşamı düzenleme ve hedef belirleme konusundaki güçlükler",
+      "questionIds": [
+        1,
+        4,
+        5,
+        16
+      ],
+      "totalItems": 4
+    }
+  },
+  "scoring": {
+    "method": "Her madde 1-5 arası puanlanır. Toplam puan, tüm maddelerin puanlarının toplamıdır. Yüksek puanlar, olumsuz otomatik düşüncelerin daha sık yaşandığını gösterir.",
+    "totalScoreRange": {
+      "minimum": 30,
+      "maximum": 150
+    },
+    "responseFormat": {
+      "1": "Hiç aklımdan geçmedi - Düşüncenin hiç yaşanmadığı",
+      "2": "Ender olarak aklımdan geçti - Düşüncenin nadiren yaşandığı",
+      "3": "Arada sırada aklımdan geçti - Düşüncenin bazen yaşandığı",
+      "4": "Sık sık aklımdan geçti - Düşüncenin sıklıkla yaşandığı",
+      "5": "Hep aklımdan geçti - Düşüncenin sürekli yaşandığı"
+    },
+    "interpretation": {
+      "highScore": "Yüksek puanlar depresif düşünce örüntülerinin varlığını ve şiddetini gösterir",
+      "lowScore": "Düşük puanlar olumsuz otomatik düşüncelerin az yaşandığını gösterir",
+      "clinicalNote": "Klinik değerlendirme için profesyonel görüş gereklidir"
+    },
+    "cutoffScores": {
+      "note": "Kesme puanları araştırmalara göre değişkenlik gösterebilir",
+      "suggestion": "Yüksek puanlar (örn. >70) klinik düzeyde depresif düşünceler olabileceğini gösterir"
+    }
+  },
+  "instructions": "Aşağıda kişilerin zaman zaman aklına gelen bazı düşünceler sıralanmıştır. Lütfen her birini okuyarak, bu düşüncelerin SON BİR HAFTA içinde aklınızdan ne kadar sıklıkla geçtiğini işaretleyiniz. Lütfen her bir maddeyi dikkatle okuyunuz ve maddelerin yanındaki uygun sayıyı işaretleyiniz.",
+  "timeFrame": "Son bir hafta",
+  "theoreticalBackground": "Bilişsel Terapi - Aaron T. Beck'in bilişsel modeline dayalı olarak geliştirilmiştir. Otomatik düşünceler, bireyin farkında olmadan zihninden geçen, hızlı ve istem dışı düşüncelerdir.",
+  "reference": "Hollon, S. D., & Kendall, P. C. (1980). Cognitive self-statements in depression: Development of an Automatic Thoughts Questionnaire. Cognitive Therapy and Research, 4(4), 383-395. Türkçe uyarlama: Şahin, N. H., & Şahin, N. (1992).",
+  "website": "www.bilisseldavranisci.org"
+}

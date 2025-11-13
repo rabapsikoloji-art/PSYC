@@ -1,0 +1,2546 @@
+{
+  "testName": "Belirti Tarama Listesi (SCL-90-R)",
+  "testCode": "SCL-90-R",
+  "version": "Türkçe Uyarlama (Arda Tuna 2004)",
+  "description": "SCL-90-R, bireylerin yaşadıkları psikolojik belirtileri ve rahatsızlık düzeylerini değerlendirmek için kullanılan 90 maddelik bir kendini değerlendirme ölçeğidir. Son bir ay içindeki yakınmaları 5'li Likert tipi ölçek üzerinde değerlendirir.",
+  "totalQuestions": 90,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Baş ağrısı",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Sinirlilik ya da içinin titremesi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Zihinden atamadığınız tekrarlayıcı hoşa gitmeyen düşünceler",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Baygınlık veya baş dönmesi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Cinsel arzu ve ilginin kaybı",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Başkaları tarafından eleştirilme duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Herhangi bir kimsenin düşüncelerinizi kontrol edebileceği duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Sorunlarınızdan pek çoğu için başkalarının suçlanması gerektiği duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Olayları anımsamada güçlük",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Dikkatsizlik veya sakarlıkla ilgili endişeler",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Kolayca gücenme, rahatsız olma hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Göğüs veya kalp bölgesinde ağrılar",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Caddelerde veya açık alanlarda korku hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Enerjinizde azalma veya yavaşlama hali",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Yaşamınızın sonlanması düşünceleri",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Başka kişilerin duymadıkları sesleri duyma",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Titreme",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Çoğu kişiye güvenilmemesi gerektiği hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "İştah azalması",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Kolayca ağlama",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Karşı cinsten kişilerle utangaçlık ve rahatsız olma hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Tuzağa düşürülmüş ya da yakalanmış olma hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Bir neden olmaksızın aniden korkuya kapılma",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Kontrol edilemeyen öfke patlamaları",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "Evden dışarı yalnız çıkma korkusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "text": "Olanlar için kendini suçlama",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "text": "Belin alt kısmında ağrılar",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "İşlerin yapılmasında erteleme duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "text": "Yalnızlık hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "text": "Karamsarlık hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "text": "Her şey için çok fazla endişe etme",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "text": "Her şeye karşı ilgisizlik hali",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "text": "Korku hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "text": "Duygularınızın kolayca incinebilmesi hali",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "text": "Diğer insanların sizin özel düşüncelerinizi bilmesi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "text": "Başkalarının sizi anlamadığı ya da hissedemeyeceği duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "text": "Başkalarının sizi sevmediği ya da dostça olmayan davranışlar gösterdiği hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "text": "İşlerin doğru yapıldığından emin olabilmek için çok yavaş yapmak",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "text": "Kalbin çok hızlı çarpması",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "text": "Bulantı ve midede rahatsızlık hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "text": "Kendini başkalarından aşağı görme",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "text": "Adale (kas) ağrıları",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "text": "Başkalarının sizi gözlediği veya hakkınızda konuştuğu hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "text": "Uykuya dalmada güçlük",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "text": "Yaptığınız işleri bir yada birkaç kez kontrol etme",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "text": "Karar vermede güçlük",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "text": "Otobüs, tren, metro gibi araçlarla yolculuk etme korkusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "text": "Nefes almada güçlük",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "text": "Soğuk veya sıcak basması",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "text": "Sizi korkutan belirli uğraş,yer ve nesnelerden kaçınma durumu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "text": "Hiçbir şey düşünmeme hali",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "text": "Bedeninizin bazı kısımlarında uyuşma karıncalanma hali",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "text": "Boğazınıza bir yumruk tıkanmış hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "text": "Gelecek konusunda ümitsizlik",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "text": "Düşüncelerinizi bir konuya yoğunlaştırmada güçlük",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "text": "Bedeninizin çeşitli kısımlarında zayıflık hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "text": "Gerginlik ve coşku hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "text": "Kol ve bacaklarda ağırlık hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "text": "Ölüm veya ölme düşünceleri",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "text": "Aşırı yemek yeme",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "text": "İnsanlar size baktığı ya da hakkınızda konuştuğu zaman rahatsızlık duyma",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "text": "Size ait olmayan düşüncelere sahip olma",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "text": "Bir başkasına vurmak, zarar vermek, yaralamak dürtülerinin olması",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "text": "Sabahın erken saatlerinde uyanma",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "text": "Yıkanma, sayma , dokunma gibi bazı hareketleri tekrarlama hali",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "text": "Uykuda huzursuzluk, rahat uyuyamama",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "text": "Bazı şeyleri kırıp dökme isteği",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "text": "Başkalarının paylaşıp kabul etmediği inanç ve düşüncelerinin olması",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "text": "Başkalarının yanında kendini çok sıkılgan hissetme",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "text": "Çarşı, sinema gibi kalabalık yerlerde rahatsızlık hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "text": "Her şeyin bir yük gibi görünmesi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "text": "Dehşet ve panik nöbetleri",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "text": "Toplum içinde yer veya içerken huzursuzluk hissi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "text": "Sık sık tartışmaya girme",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "text": "Yalnız bırakıldığında sinirlilik hali",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "text": "Başkalarının sizi başarılarınız için yeterince taktir etmediği duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "text": "Başkalarıyla birlikte olunan durumlarda bile yalnızlık hissetme",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "text": "Yerinizde duramayacak ölçüde rahatsızlık duyma",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "text": "Değersizlik duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "text": "Size kötü bir şey olacakmış duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "text": "Bağırma yada eşyaları fırlatma",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "text": "Topluluk içinde bayılacağınız korkusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "text": "Eğer izin verirseniz insanların sizi sömüreceği duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "text": "Cinsiyet konusunda sizi çok rahatsız eden düşüncelerin olması",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "text": "Günahlarınızdan dolayı cezalandırılmanız gerektiği düşüncesi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "text": "Korkutucu türden düşünce ve hayaller",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "text": "Bedeninizde ciddi bir rahatsızlık olduğu düşüncesi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "text": "Başka bir kişiye karşı asla yakınlık duymama",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "text": "Suçluluk duygusu",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "text": "Aklınızda bir bozukluğun olduğu düşüncesi",
+      "options": [
+        {
+          "value": 0,
+          "label": "Hiç"
+        },
+        {
+          "value": 1,
+          "label": "Çok Az"
+        },
+        {
+          "value": 2,
+          "label": "Orta Derecede"
+        },
+        {
+          "value": 3,
+          "label": "Oldukça Fazla"
+        },
+        {
+          "value": 4,
+          "label": "İleri Derecede Fazla"
+        }
+      ]
+    }
+  ],
+  "scales": {
+    "SOM": {
+      "name": "Somatizasyon (Somatization)",
+      "description": "Kardiyovasküler, gastrointestinal, solunum sistemi ve diğer sistemlere ait bedensel yakınmaları içerir",
+      "questionIds": [
+        1,
+        4,
+        12,
+        27,
+        40,
+        42,
+        48,
+        49,
+        52,
+        53,
+        56,
+        58
+      ],
+      "totalItems": 12
+    },
+    "OC": {
+      "name": "Obsesif-Kompulsif (Obsessive-Compulsive)",
+      "description": "Bireyin istemiyle kontrol edemediği düşünce, dürtü ve davranışları içerir",
+      "questionIds": [
+        3,
+        9,
+        10,
+        28,
+        38,
+        45,
+        46,
+        51,
+        55,
+        65
+      ],
+      "totalItems": 10
+    },
+    "INT": {
+      "name": "Kişilerarası Duyarlılık (Interpersonal Sensitivity)",
+      "description": "Başkaları ile birlikte olduğunda hissedilen tedirginlik ve yetersizlik duyguları",
+      "questionIds": [
+        6,
+        21,
+        34,
+        36,
+        37,
+        41,
+        61,
+        69,
+        73
+      ],
+      "totalItems": 9
+    },
+    "DEP": {
+      "name": "Depresyon (Depression)",
+      "description": "Çökkünlük, motivasyon ve enerji kaybı, umutsuzluk, intihar düşünceleri",
+      "questionIds": [
+        5,
+        14,
+        15,
+        20,
+        22,
+        26,
+        29,
+        30,
+        31,
+        32,
+        54,
+        71,
+        79
+      ],
+      "totalItems": 13
+    },
+    "ANX": {
+      "name": "Anksiyete (Anxiety)",
+      "description": "Belirgin gerginlik, huzursuzluk, panik atakları ve korku",
+      "questionIds": [
+        2,
+        17,
+        23,
+        33,
+        39,
+        57,
+        72,
+        78,
+        80,
+        86
+      ],
+      "totalItems": 10
+    },
+    "HOS": {
+      "name": "Hostilite (Hostility)",
+      "description": "Düşmanlık, öfke, sinirlilik ve agresif düşünceler",
+      "questionIds": [
+        11,
+        24,
+        63,
+        67,
+        74,
+        81
+      ],
+      "totalItems": 6
+    },
+    "PHOB": {
+      "name": "Fobik Anksiyete (Phobic Anxiety)",
+      "description": "Agorafobi, sosyal fobi, belirli nesnelere karşı fobi",
+      "questionIds": [
+        13,
+        25,
+        47,
+        50,
+        70,
+        75,
+        82
+      ],
+      "totalItems": 7
+    },
+    "PAR": {
+      "name": "Paranoid Düşünce (Paranoid Ideation)",
+      "description": "Kuşkuculuk, kendini referans alma, kontrol edilme düşünceleri",
+      "questionIds": [
+        8,
+        18,
+        43,
+        68,
+        76,
+        83
+      ],
+      "totalItems": 6
+    },
+    "PSY": {
+      "name": "Psikotizm (Psychoticism)",
+      "description": "Yalnızlık, içe kapanıklık, düşünce yayılması, halüsinasyonlar",
+      "questionIds": [
+        7,
+        16,
+        35,
+        62,
+        77,
+        84,
+        85,
+        87,
+        88,
+        90
+      ],
+      "totalItems": 10
+    },
+    "ADDITIONAL": {
+      "name": "Ek Maddeler (Additional Items)",
+      "description": "Herhangi bir alt ölçeğe dahil olmayan maddeler",
+      "questionIds": [
+        19,
+        44,
+        59,
+        60,
+        64,
+        66,
+        89
+      ],
+      "totalItems": 7
+    }
+  },
+  "globalIndices": {
+    "GSI": {
+      "name": "Genel Şiddet İndeksi (Global Severity Index)",
+      "description": "Bireyin psikolojik rahatsızlığının genel düzeyini yansıtır. Tüm maddelerin puanlarının toplamının toplam madde sayısına bölünmesiyle elde edilir.",
+      "calculation": "Toplam puan / 90"
+    },
+    "PST": {
+      "name": "Pozitif Belirti Toplamı (Positive Symptom Total)",
+      "description": "Hiç cevabı dışında herhangi bir puan verilen (1-4 arası) madde sayısını gösterir.",
+      "calculation": "0'dan büyük puan verilen madde sayısı"
+    },
+    "PSDI": {
+      "name": "Pozitif Belirti Rahatsızlık İndeksi (Positive Symptom Distress Index)",
+      "description": "Belirtilerin yoğunluk düzeyini değerlendirir. Pozitif belirti gösteren maddelerin ortalama puanıdır.",
+      "calculation": "Toplam puan / PST"
+    }
+  },
+  "scoring": {
+    "method": "Her madde 0-4 arası puanlanır. Alt ölçek puanları, o ölçekteki maddelerin puanlarının toplamının madde sayısına bölünmesiyle elde edilir. Yüksek puanlar daha fazla psikolojik rahatsızlık gösterir.",
+    "responseFormat": {
+      "0": "Hiç - Belirtinin hiç yaşanmadığı",
+      "1": "Çok Az - Belirtinin hafif düzeyde yaşandığı",
+      "2": "Orta Derecede - Belirtinin orta düzeyde yaşandığı",
+      "3": "Oldukça Fazla - Belirtinin yoğun yaşandığı",
+      "4": "İleri Derecede Fazla - Belirtinin çok yoğun yaşandığı"
+    },
+    "interpretation": {
+      "cutoffNote": "Türk örneklemi için kesme puanları belirlenmiştir. Klinik değerlendirme için profesyonel görüş gereklidir.",
+      "scaleRange": "Her alt ölçek 0-4 arası ortalama puan alır",
+      "clinicalSignificance": "Yüksek puanlar psikopatolojik belirtilerin varlığını gösterir"
+    }
+  },
+  "instructions": "Aşağıda, zaman zaman herkeste olabilecek yakınma ve sorunların bir listesi vardır. Lütfen her birini dikkatlice okuyunuz. Sonra bu durumun bugün de dahil olmak üzere son bir ay içinde sizi ne ölçüde huzursuz ve tedirgin ettiğini karşısındaki ölçekte derecelendiriniz.",
+  "timeFrame": "Son bir ay",
+  "reference": "Derogatis, L. R. (1977). SCL-90-R: Administration, Scoring, and Procedures Manual-I. Baltimore: Clinical Psychometric Research. Türkçe uyarlama: Dağ, İ. (1991)."
+}
