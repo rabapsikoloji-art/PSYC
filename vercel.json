@@ -7,7 +7,7 @@
   "regions": [ "iad1" ],
   "env": {
     "DATABASE_URL": "postgresql://postgres:uKfdyfUePNvgjyZx@db.uwebicutypriyrgjjjkl.supabase.co:5432/postgres",
-    "NEXTAUTH_URL": "@nextauth_url",
+    "NEXTAUTH_URL": "https://psyc-two.vercel.app/",
     "NEXTAUTH_SECRET": "@nextauth_secret"
   }
 }
