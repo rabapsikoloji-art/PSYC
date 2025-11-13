@@ -1,14 +1,13 @@
-
 {
   "version": 2,
   "buildCommand": "yarn prisma generate && yarn build",
   "devCommand": "yarn dev",
   "installCommand": "yarn install",
   "framework": "nextjs",
-  "regions": ["iad1"],
+  "regions": [ "iad1" ],
   "env": {
-    "DATABASE_URL": "@database_url",
-    "NEXTAUTH_URL": "@nextauth_url",
+    "DATABASE_URL": "postgresql://postgres:uKfdyfUePNvgjyZx@db.uwebicutypriyrgjjjkl.supabase.co:5432/postgres",
+    "NEXTAUTH_URL": "https://psyc-two.vercel.app/",
     "NEXTAUTH_SECRET": "@nextauth_secret"
   }
 }
