@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
       });
 
       analysisData += "=== TEST SONUÇLARI ===\n\n";
-      tests.forEach((test) => {
+        tests.forEach((test: any) => {  // ← any tipi ekleyin
         const testTypeMap: Record<string, string> = {
           BECK_DEPRESSION: "Beck Depresyon Envanteri",
           BECK_ANXIETY: "Beck Anksiyete Envanteri",
