@@ -1,0 +1,592 @@
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/clinic_management_system/nextjs_space/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id                   String         @id @default(cuid())
+  name                 String?
+  email                String         @unique
+  emailVerified        DateTime?
+  image                String?
+  password             String?
+  role                 UserRole       @default(CLIENT)
+  membershipType       MembershipType @default(TRIAL)
+  phone                String?
+  referralSource       String?        // arkadaş, instagram, tiktok, linkedin, etc.
+  tcNo                 String?        // TC Kimlik No
+  address              String?        @db.Text
+  accountType          AccountType    @default(ADULT)
+  kvkkConsent          Boolean        @default(false)
+  consentFormType      String?        // "adult" or "child"
+  isActive             Boolean        @default(true)
+  ethicsFormAccepted   Boolean        @default(false)
+  ethicsFormAcceptedAt DateTime?
+  createdAt            DateTime       @default(now())
+  updatedAt            DateTime       @updatedAt
+  accounts             Account[]
+  sessions             Session[]
+  personnel            Personnel?
+  client               Client?
+  notifications        Notification[]
+}
+
+model Personnel {
+  id              String    @id @default(cuid())
+  userId          String    @unique
+  firstName       String
+  lastName        String
+  phone           String?
+  specialization  String?
+  workingHours    Json?     // Stores working schedule as JSON
+  photo           String?   // S3 path for photo
+  isActive        Boolean   @default(true)
+  // Yetkilendirme - Koordinatör tarafından ayarlanabilir
+  canViewPayments Boolean   @default(true)  // Ödemeleri görebilir mi
+  canCreateSessions Boolean @default(true)  // Seans oluşturabilir mi
+  canEditSessions Boolean   @default(true)  // Seansları düzenleyebilir mi
+  canDeleteSessions Boolean @default(false) // Seansları silebilir mi
+  canViewAllClients Boolean @default(false) // Tüm danışanları görebilir mi (sadece atananlar değil)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  user                User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  appointments        Appointment[]
+  sessionNotes        SessionNote[]
+  assignments         Assignment[]
+  tests               Test[]
+  services            PersonnelService[] // Psikologun verebileceği hizmetler
+  sessionPlans        SessionPlan[]
+  assignedClients     Client[]           @relation("ClientPsychologist") // Atanmış danışanlar
+  blockedTimes        BlockedTime[]      // Bloke edilen saatler
+}
+
+model Client {
+  id                      String    @id @default(cuid())
+  userId                  String    @unique
+  firstName               String
+  lastName                String
+  phone                   String?
+  dateOfBirth             DateTime?
+  emergencyContact        String?
+  emergencyPhone          String?
+  photo                   String?   // S3 path for photo
+  isActive                Boolean   @default(true)
+  kvkk_consent            Boolean   @default(false)
+  consentDate             DateTime?
+  assignedPsychologistId  String?   // Atanan psikolog
+  createdAt               DateTime  @default(now())
+  updatedAt               DateTime  @updatedAt
+  
+  user                User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  assignedPsychologist Personnel?       @relation("ClientPsychologist", fields: [assignedPsychologistId], references: [id], onDelete: SetNull)
+  appointments        Appointment[]
+  transactions        Transaction[]
+  clientPackages      ClientPackage[]
+  sessionNotes        SessionNote[]
+  assignments         Assignment[]
+  tests               Test[]
+  anamnesisForm       AnamnesisForm[]   // One-to-many ilişki
+  sessionPlans        SessionPlan[]
+}
+
+model Service {
+  id          String      @id @default(cuid())
+  name        String
+  description String?
+  duration    Int         // Duration in minutes
+  price       Float
+  serviceType ServiceType
+  isActive    Boolean     @default(true)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  
+  appointments       Appointment[]
+  packageServices    PackageService[]
+  personnelServices  PersonnelService[] // Hangi psikologların bu hizmeti verebildiği
+}
+
+model Package {
+  id              String    @id @default(cuid())
+  name            String
+  description     String?
+  totalSessions   Int
+  totalPrice      Float
+  discountPercent Float?
+  validityDays    Int       // Package validity in days
+  isActive        Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  packageServices PackageService[]
+  clientPackages  ClientPackage[]
+}
+
+model PackageService {
+  id         String  @id @default(cuid())
+  packageId  String
+  serviceId  String
+  sessions   Int     // Number of sessions for this service in package
+  
+  package Package @relation(fields: [packageId], references: [id], onDelete: Cascade)
+  service Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  
+  @@unique([packageId, serviceId])
+}
+
+model ClientPackage {
+  id              String    @id @default(cuid())
+  clientId        String
+  packageId       String
+  purchaseDate    DateTime  @default(now())
+  expiryDate      DateTime
+  sessionsUsed    Int       @default(0)
+  isActive        Boolean   @default(true)
+  
+  client    Client  @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  package   Package @relation(fields: [packageId], references: [id], onDelete: Cascade)
+}
+
+model Appointment {
+  id            String            @id @default(cuid())
+  clientId      String
+  personnelId   String
+  serviceId     String
+  appointmentDate DateTime
+  duration      Int               // Duration in minutes
+  status        AppointmentStatus @default(SCHEDULED)
+  notes         String?
+  price         Float?
+  isOnline      Boolean           @default(false)
+  meetLink      String?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  
+  client      Client      @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  personnel   Personnel   @relation(fields: [personnelId], references: [id], onDelete: Cascade)
+  service     Service     @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  transaction Transaction?
+  sessionNote SessionNote?
+}
+
+model Transaction {
+  id            String          @id @default(cuid())
+  appointmentId String?         @unique
+  clientId      String?
+  amount        Float
+  type          TransactionType
+  paymentMethod PaymentMethod
+  description   String?
+  category      String?         // For expenses
+  transactionDate DateTime      @default(now())
+  createdAt     DateTime        @default(now())
+  
+  appointment Appointment? @relation(fields: [appointmentId], references: [id])
+  client      Client?      @relation(fields: [clientId], references: [id])
+}
+
+model SessionNote {
+  id              String    @id @default(cuid())
+  appointmentId   String    @unique
+  clientId        String
+  personnelId     String
+  content         String    @db.Text
+  isConfidential  Boolean   @default(true)
+  includeInAI     Boolean   @default(false) // Psikolog bu notu AI analizinde kullanmak isterse true yapar
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  appointment Appointment @relation(fields: [appointmentId], references: [id], onDelete: Cascade)
+  client      Client      @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  personnel   Personnel   @relation(fields: [personnelId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// Anamnez Formu - Psikolojik değerlendirme için danışan bilgileri
+model AnamnesisForm {
+  id                        String    @id @default(cuid())
+  clientId                  String
+  personnelId               String?   // Formu dolduran psikolog
+  
+  // 1) Sosyodemografik Bilgiler
+  firstName                 String?
+  lastName                  String?
+  age                       Int?
+  education                 String?
+  maritalStatus             String?
+  employmentStatus          String?
+  numberOfChildren          Int?
+  residence                 String?
+  livingWith                String?
+  
+  // 2) Şimdiki Rahatsızlığının Şikayeti
+  currentComplaint          String?   @db.Text
+  
+  // 3) Şimdiki Şikayetinin Öyküsü
+  currentComplaintHistory   String?   @db.Text
+  
+  // 4) Geçmiş Şikayetinin Öyküsü
+  pastComplaintHistory      String?   @db.Text
+  
+  // 5) Geçmiş Yaşantısının Öyküsü
+  pastLifeHistory           String?   @db.Text
+  
+  // 6) Madde ve İlaç Kullanım Öyküsü
+  substanceMedicationHistory String?  @db.Text
+  
+  // 7) Genel Tıbbi Durum
+  generalMedicalCondition   String?   @db.Text
+  
+  // 8) Ailenin Geçmiş Hastalık Öyküsü
+  familyMedicalHistory      String?   @db.Text
+  
+  // 9) Mental Durum Değerlendirmesi
+  selfCare                  String?
+  speech                    String?
+  psychomotorActivity       String?
+  affect                    String?
+  mood                      String?
+  thought                   String?
+  perception                String?
+  behavior                  String?
+  insight                   String?
+  
+  // 10) Bilişsel İşlevler
+  attention                 String?
+  memory                    String?
+  calculation               String?
+  drawing                   String?
+  abstraction               String?
+  executiveFunctions        String?
+  orientation               String?
+  
+  // 11) Öykünün Teknik Özetlemesi
+  technicalSummary          String?   @db.Text
+  
+  // 12) Ayırıcı Tanı
+  differentialDiagnosis     String?   @db.Text
+  
+  // 13) Tanı
+  diagnosis                 String?   @db.Text
+  
+  // 14) Tedavi Planı
+  treatmentPlan             String?   @db.Text
+  
+  // Ekstra sorular - Psikolog sonradan ekleyebilir
+  extraQuestions            String?   @db.Text
+  
+  // Word dosyası yükleme
+  uploadedFile              String?   // S3 path for uploaded Word file
+  
+  // AI analiz için işaretleme
+  includeInAI               Boolean   @default(false)
+  
+  createdAt                 DateTime  @default(now())
+  updatedAt                 DateTime  @updatedAt
+  
+  client                    Client    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  
+  @@index([clientId])
+  @@index([personnelId])
+}
+
+// Psikologların verebileceği hizmetler
+model PersonnelService {
+  id          String    @id @default(cuid())
+  personnelId String
+  serviceId   String
+  createdAt   DateTime  @default(now())
+  
+  personnel   Personnel @relation(fields: [personnelId], references: [id], onDelete: Cascade)
+  service     Service   @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  
+  @@unique([personnelId, serviceId])
+  @@index([personnelId])
+  @@index([serviceId])
+}
+
+// Seans Planları - Psikolog danışana kaç seans gelmesi gerektiğini atar
+model SessionPlan {
+  id                    String           @id @default(cuid())
+  clientId              String
+  personnelId           String
+  totalSessions         Int              // Toplam seans sayısı
+  completedSessions     Int              @default(0)
+  sessionType           String?          // Seans türü (bireysel, çift, aile vb.)
+  frequency             String?          // Haftada kaç kez (ör: "Haftada 1", "Haftada 2")
+  startDate             DateTime
+  endDate               DateTime?
+  status                SessionPlanStatus @default(ACTIVE)
+  notes                 String?          @db.Text
+  createdAt             DateTime         @default(now())
+  updatedAt             DateTime         @updatedAt
+  
+  client                Client           @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  personnel             Personnel        @relation(fields: [personnelId], references: [id], onDelete: Cascade)
+  
+  @@index([clientId])
+  @@index([personnelId])
+  @@index([status])
+}
+
+// Entegrasyon Ayarları - Global API anahtarları ve ayarlar
+model IntegrationSettings {
+  id                    String   @id @default(cuid())
+  integrationType       String   @unique // 'whatsapp', 'google', 'sms', 'ai'
+  providerName          String?  // 'meta', 'twilio', 'google', 'abacusai', etc.
+  config                Json     // Provider-specific configuration (API keys şifreli saklanacak)
+  isActive              Boolean  @default(true)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+  
+  @@index([integrationType])
+}
+
+// Bildirimler - Danışanlara ve personele sistem içi bildirimler
+model Notification {
+  id            String    @id @default(cuid())
+  userId        String
+  title         String
+  message       String    @db.Text
+  type          String    // 'appointment', 'assignment', 'test', 'general'
+  relatedId     String?   // Related entity ID (appointment, assignment, etc.)
+  isRead        Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([userId])
+  @@index([isRead])
+  @@index([createdAt])
+}
+
+
+// Enums
+enum UserRole {
+  ADMINISTRATOR
+  COORDINATOR
+  PSYCHOLOGIST
+  CLIENT
+}
+
+enum AccountType {
+  ADULT
+  CHILD
+}
+
+enum ServiceType {
+  INDIVIDUAL_THERAPY
+  COUPLES_THERAPY
+  FAMILY_THERAPY
+  CHILD_ADOLESCENT_THERAPY
+  ONLINE_THERAPY
+  GROUP_THERAPY
+}
+
+enum AppointmentStatus {
+  SCHEDULED
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+  IN_PROGRESS
+}
+
+enum TransactionType {
+  INCOME
+  EXPENSE
+}
+
+enum PaymentMethod {
+  CASH
+  CREDIT_CARD
+  BANK_TRANSFER
+  PACKAGE
+}
+
+enum AssignmentType {
+  BOOK
+  READING
+  WRITING
+  EXERCISE
+  VIDEO
+  AUDIO
+  OTHER
+}
+
+enum AssignmentStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  OVERDUE
+}
+
+enum TestType {
+  BECK_DEPRESSION
+  BECK_ANXIETY
+  SCL_90
+  MMPI
+  OTOMATIK_DUSUNCELER
+}
+
+enum MembershipType {
+  PREMIUM    // Sınırsız test ve AI analiz
+  NORMAL     // Ödeme yaparak test analiz ettirebilir
+  TRIAL      // AI analiz dışında tüm özellikler
+}
+
+enum SessionPlanStatus {
+  ACTIVE
+  COMPLETED
+  CANCELLED
+  ON_HOLD
+}
+
+model Assignment {
+  id              String           @id @default(cuid())
+  clientId        String
+  personnelId     String
+  title           String
+  description     String           @db.Text
+  type            AssignmentType
+  status          AssignmentStatus @default(PENDING)
+  dueDate         DateTime?
+  completedAt     DateTime?
+  notes           String?          @db.Text
+  clientFeedback  String?          @db.Text
+  attachments     Json?            // Array of S3 paths for files uploaded by personnel
+  submissions     Json?            // Array of S3 paths for files uploaded by client
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  
+  client          Client           @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  personnel       Personnel        @relation(fields: [personnelId], references: [id], onDelete: Cascade)
+  
+  @@index([clientId])
+  @@index([personnelId])
+  @@index([status])
+}
+
+model Test {
+  id              String       @id @default(cuid())
+  clientId        String
+  personnelId     String?      // Optional, can be assigned by psychologist
+  testType        TestType
+  responses       Json         // Store all test responses as JSON
+  totalScore      Int?
+  severity        String?      // e.g., "Minimal", "Mild", "Moderate", "Severe"
+  completedAt     DateTime?
+  analyzedByAI    Boolean      @default(false)
+  aiAnalysis      String?      @db.Text
+  aiAnalyzedAt    DateTime?
+  notes           String?      @db.Text
+  includeInAI     Boolean      @default(false) // Psikolog bu testi AI analizinde kullanmak isterse true yapar
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  
+  client          Client       @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  personnel       Personnel?   @relation(fields: [personnelId], references: [id], onDelete: SetNull)
+  
+  @@index([clientId])
+  @@index([personnelId])
+  @@index([testType])
+}
+
+// AI Analiz Geçmişi - Danışan için yapılan AI analizleri
+model AIAnalysis {
+  id              String    @id @default(cuid())
+  clientId        String
+  personnelId     String    // Analizi yapan psikolog
+  title           String    // Analiz başlığı
+  content         String    @db.Text // AI tarafından oluşturulan analiz metni
+  includedData    Json      // Hangi veriler dahil edildi (testler, anamnez, seans notları)
+  createdAt       DateTime  @default(now())
+  
+  @@index([clientId])
+  @@index([personnelId])
+  @@index([createdAt])
+}
+
+// Bloke Edilmiş Saatler - Psikolog veya yönetici tarafından bloke edilmiş zaman aralıkları
+model BlockedTime {
+  id            String    @id @default(cuid())
+  personnelId   String
+  startTime     DateTime
+  endTime       DateTime
+  reason        String?   // Bloke etme nedeni (tatil, eğitim, vb.)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  personnel     Personnel @relation(fields: [personnelId], references: [id], onDelete: Cascade)
+  
+  @@index([personnelId])
+  @@index([startTime])
+}
+
+// Uygulama Ayarları - Global ayarlar
+model AppSettings {
+  id                    String   @id @default(cuid())
+  
+  // Çalışma Saatleri
+  workingHoursStart     String?  // "09:00"
+  workingHoursEnd       String?  // "18:00"
+  workingDays           Json?    // ["Monday", "Tuesday", ...]
+  
+  // Takvim Ayarları
+  calendarSlotDuration  Int?     @default(30) // Dakika cinsinden slot süresi
+  calendarMinTime       String?  @default("00:00") // Takvimde görünen başlangıç saati
+  calendarMaxTime       String?  @default("24:00") // Takvimde görünen bitiş saati
+  defaultView           String?  @default("timeGridWeek") // dayGridMonth, timeGridWeek, timeGridDay
+  
+  // İşletme Bilgileri
+  clinicName            String?
+  clinicAddress         String?  @db.Text
+  clinicPhone           String?
+  clinicEmail           String?
+  clinicIBAN            String?
+  
+  // Tatil Zamanları (JSON array of {date, description})
+  holidays              Json?
+  
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+}
