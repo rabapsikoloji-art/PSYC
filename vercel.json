@@ -6,8 +6,8 @@
   "framework": "nextjs",
   "regions": [ "iad1" ],
   "env": {
-    "DATABASE_URL": "postgresql://postgres:uKfdyfUePNvgjyZx@db.uwebicutypriyrgjjjkl.supabase.co:5432/postgres",
-    "NEXTAUTH_URL": "https://psyc-two.vercel.app/",
+    "DATABASE_URL": "@database_url",
+    "NEXTAUTH_URL": "@nextauth_url",
     "NEXTAUTH_SECRET": "@nextauth_secret"
   }
 }
