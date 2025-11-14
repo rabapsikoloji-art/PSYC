@@ -1,4 +1,3 @@
-
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
@@ -49,6 +48,10 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { clientId, selectedTests, selectedNotes, selectedAnamnesis, dateRange } = body;
 
+    if (!clientId) {
+      return NextResponse.json({ error: "Client ID required" }, { status: 400 });
+    }
+
     // Get personnel ID
     const personnel = await prisma.personnel.findUnique({
       where: { userId: session.user.id }
@@ -92,7 +95,7 @@ export async function POST(req: NextRequest) {
 
     if (anamnesisData.length > 0) {
       analysisPrompt += `## ANAMNEZ FORMLARI\n`;
-        anamnesisData.forEach((form: any, idx: number) => {  // ← idx: number ekleyin
+      anamnesisData.forEach((form: any, idx: number) => {
         analysisPrompt += `\n### Anamnez ${idx + 1} (${new Date(form.createdAt).toLocaleDateString('tr-TR')})\n`;
         if (form.currentComplaint) analysisPrompt += `**Şikayet:** ${form.currentComplaint}\n`;
         if (form.diagnosis) analysisPrompt += `**Tanı:** ${form.diagnosis}\n`;
@@ -102,7 +105,7 @@ export async function POST(req: NextRequest) {
 
     if (testsData.length > 0) {
       analysisPrompt += `\n## TEST SONUÇLARI\n`;
-      testsData.forEach((test, idx) => {
+      testsData.forEach((test: any, idx: number) => {
         analysisPrompt += `\n### Test ${idx + 1}: ${test.testType} (${new Date(test.createdAt).toLocaleDateString('tr-TR')})\n`;
         analysisPrompt += `**Puan:** ${test.totalScore}\n`;
         analysisPrompt += `**Şiddet:** ${test.severity}\n`;
@@ -112,7 +115,7 @@ export async function POST(req: NextRequest) {
 
     if (notesData.length > 0) {
       analysisPrompt += `\n## SEANS NOTLARI\n`;
-      notesData.forEach((note, idx) => {
+      notesData.forEach((note: any, idx: number) => {
         analysisPrompt += `\n### Seans ${idx + 1} (${new Date(note.createdAt).toLocaleDateString('tr-TR')})\n`;
         analysisPrompt += `${note.content}\n`;
       });
@@ -145,11 +148,17 @@ export async function POST(req: NextRequest) {
     });
 
     if (!aiResponse.ok) {
-      throw new Error('AI API call failed');
+      const errText = await aiResponse.text().catch(() => '');
+      console.error("AI API error:", aiResponse.status, errText);
+      throw new Error(`AI API call failed: ${aiResponse.status} ${errText}`);
     }
 
-    const aiData = await aiResponse.json();
-    const analysisContent = aiData.choices[0]?.message?.content || 'Analiz oluşturulamadı.';
+    const aiData = await aiResponse.json().catch(() => ({}));
+    const analysisContent =
+      aiData?.choices?.[0]?.message?.content ??
+      aiData?.choices?.[0]?.text ??
+      aiData?.result ??
+      'Analiz oluşturulamadı.';
 
     // Save analysis
     const analysis = await prisma.aIAnalysis.create({
