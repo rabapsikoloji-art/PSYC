@@ -81,7 +81,7 @@ export async function GET(req: NextRequest) {
         const personnel = apts[0].personnel;
         const personnelName = `${personnel.firstName} ${personnel.lastName}`;
         
-        const appointmentList = apts.map(apt => ({
+          const appointmentList = apts.map((apt: any) => ({
           clientName: `${apt.client.firstName} ${apt.client.lastName}`,
           time: new Intl.DateTimeFormat('tr-TR', {
             hour: '2-digit',
