@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
 
     if (anamnesisData.length > 0) {
       analysisPrompt += `## ANAMNEZ FORMLARI\n`;
-      anamnesisData.forEach((form, idx) => {
+        anamnesisData.forEach((form: any, idx) => {  // ← : any ekleyin
         analysisPrompt += `\n### Anamnez ${idx + 1} (${new Date(form.createdAt).toLocaleDateString('tr-TR')})\n`;
         if (form.currentComplaint) analysisPrompt += `**Şikayet:** ${form.currentComplaint}\n`;
         if (form.diagnosis) analysisPrompt += `**Tanı:** ${form.diagnosis}\n`;
