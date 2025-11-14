@@ -75,7 +75,7 @@ export async function POST(req: NextRequest) {
       });
 
       analysisData += "=== SEANS NOTLARI ===\n\n";
-      notes.forEach((note) => {
+        notes.forEach((note: any) => {  // ← any tipi ekleyin
         const date = note.appointment?.appointmentDate || note.createdAt;
         analysisData += `Tarih: ${new Date(date).toLocaleDateString("tr-TR")}\n`;
         analysisData += `${note.content}\n\n`;
