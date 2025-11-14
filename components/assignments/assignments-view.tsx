@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -178,7 +177,7 @@ export function AssignmentsView() {
         submitFormData.append("dueDate", formData.dueDate);
       }
 
-      files.forEach((file) => {
+      files.forEach((file: any) => {
         submitFormData.append("files", file);
       });
 

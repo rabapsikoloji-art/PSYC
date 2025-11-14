@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -69,7 +68,7 @@ export function StatisticsView() {
 
   // Service popularity
   const serviceCount: { [key: string]: number } = {};
-  appointments.forEach((apt) => {
+  appointments.forEach((apt: any) => {
     if (apt.service?.name) {
       serviceCount[apt.service.name] = (serviceCount[apt.service.name] || 0) + 1;
     }

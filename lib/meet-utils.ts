@@ -1,4 +1,3 @@
-
 /**
  * Google Meet link oluşturma ve WhatsApp mesajı gönderme fonksiyonları
  */
@@ -171,7 +170,7 @@ Bugünkü randevularınız (${today}):
 
 `;
 
-  appointments.forEach((apt, index) => {
+  appointments.forEach((apt: any, index: number) => {
     const type = apt.isOnline ? '💻 Online' : '🏢 Yüz Yüze';
     message += `${index + 1}. ${apt.time} - ${apt.clientName} (${type})
 `;

@@ -60,7 +60,7 @@ export function TestForm({ testType, testTitle, questions, clientId }: TestFormP
     } else {
       // For other tests, fill with random option values
       const newResponses: { [key: number]: number } = {};
-      questions.forEach((question) => {
+      questions.forEach((question: any) => {
         const randomOption = question.options[Math.floor(Math.random() * question.options.length)];
         newResponses[question.id] = randomOption.value;
       });

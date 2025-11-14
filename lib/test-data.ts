@@ -1,4 +1,3 @@
-
 // Psikolojik Test Soruları ve Yapıları
 
 export interface TestQuestion {
@@ -541,7 +540,7 @@ export function calculateSCL90Score(responses: { [key: number]: number }): any {
     let total = 0;
     let count = 0;
     
-    scale.questionIds.forEach(qId => {
+    scale.questionIds.forEach((qId: any) => {
       if (responses[qId] !== undefined) {
         total += responses[qId];
         count++;
@@ -599,7 +598,7 @@ export function calculateOtomatikDusuncelerScore(responses: { [key: number]: num
   let responseCount = 0;
   
   // Toplam puan hesapla
-  Object.values(responses).forEach(val => {
+  Object.values(responses).forEach((val: any) => {
     totalScore += val;
     responseCount++;
   });
@@ -609,7 +608,7 @@ export function calculateOtomatikDusuncelerScore(responses: { [key: number]: num
     let scaleTotal = 0;
     let scaleCount = 0;
     
-    scale.questionIds.forEach(qId => {
+    scale.questionIds.forEach((qId: any) => {
       if (responses[qId] !== undefined) {
         scaleTotal += responses[qId];
         scaleCount++;

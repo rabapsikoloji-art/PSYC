@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -137,7 +136,7 @@ export function ClientAssignments() {
       formData.append("notes", notes);
       formData.append("clientFeedback", clientFeedback);
       
-      files.forEach((file) => {
+      files.forEach((file: any) => {
         formData.append("files", file);
       });
 
@@ -171,7 +170,7 @@ export function ClientAssignments() {
       formData.append("notes", notes);
       formData.append("clientFeedback", clientFeedback);
       
-      files.forEach((file) => {
+      files.forEach((file: any) => {
         formData.append("files", file);
       });
 

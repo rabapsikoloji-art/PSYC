@@ -1,5 +1,3 @@
-
-
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
@@ -68,7 +66,7 @@ export async function GET(req: NextRequest) {
     // Psikologlara göre grupla
     const appointmentsByPersonnel = new Map<string, typeof todaysAppointments>();
     
-    todaysAppointments.forEach(apt => {
+    todaysAppointments.forEach((apt: any) => {
       const personnelId = apt.personnel.id;
       if (!appointmentsByPersonnel.has(personnelId)) {
         appointmentsByPersonnel.set(personnelId, []);

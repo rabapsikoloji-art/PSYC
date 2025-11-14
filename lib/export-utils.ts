@@ -1,4 +1,3 @@
-
 // Utility functions for exporting data to CSV
 
 export function exportToCSV(data: any[], filename: string) {
@@ -54,7 +53,7 @@ export function exportToCSV(data: any[], filename: string) {
 export function flattenObject(obj: any, prefix = ''): any {
   const flattened: any = {};
   
-  Object.keys(obj).forEach(key => {
+  Object.keys(obj).forEach((key: any) => {
     const value = obj[key];
     const newKey = prefix ? `${prefix}_${key}` : key;
     
