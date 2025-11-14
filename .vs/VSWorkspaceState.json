@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\components",
+    "\\components\\anamnesis",
+    "\\components\\assignments"
   ],
+  "SelectedNode": "\\components\\dashboard-layout.tsx",
   "PreviewInSolutionExplorer": false
 }
